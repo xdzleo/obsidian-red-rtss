@@ -1,0 +1,479 @@
+[Master]
+Implementation=2
+FontFace=Bahnschrift
+FontHeight=-20
+FontWeight=700
+ZoomRatio=1
+[Settings]
+Name=Obsidian Red II
+RefreshPeriod=500
+LockUserSettings=1
+EmbeddedImage=ObsidianRed2\atlas.png
+PingAddr=
+[General]
+Sources=30
+Tables=0
+Layers=23
+[Source0]
+Name=GPU temperature
+Units=°C
+Format=%.0f
+Formula=
+Provider=HAL
+ID=GPU1 temperature
+[Source1]
+Name=GPU power
+Units=W
+Format=%.0f
+Formula=
+Provider=HAL
+ID=GPU1 power
+[Source2]
+Name=GPU usage
+Units=%
+Format=%.0f
+Formula=
+Provider=HAL
+ID=GPU1 usage
+[Source3]
+Name=GPU clock
+Units=MHz
+Format=%.0f
+Formula=
+Provider=HAL
+ID=GPU1 clock
+[Source4]
+Name=GPU memory usage
+Units=GB
+Format=%.1f
+Formula=x/1024
+Provider=HAL
+ID=GPU1 memory usage
+[Source5]
+Name=GPU total memory
+Units=GB
+Format=%.0f
+Formula=x/1024
+Provider=HAL
+ID=GPU1 total memory
+[Source6]
+Name=GPU memory percent
+Units=%
+Format=%.0f
+Formula=
+Provider=HAL
+ID=GPU1 memory usage percent
+[Source7]
+Name=GPU voltage
+Units=V
+Format=%.3f
+Formula=x/1000
+Provider=HAL
+ID=GPU1 voltage
+[Source8]
+Name=CPU temperature
+Units=°C
+Format=%.0f
+Formula=
+Provider=HAL
+ID=CPU temperature
+[Source9]
+Name=CPU power
+Units=W
+Format=%.0f
+Formula=
+Provider=HAL
+ID=CPU power
+[Source10]
+Name=CPU usage
+Units=%
+Format=%.0f
+Formula=
+Provider=HAL
+ID=CPU usage
+[Source11]
+Name=CPU clock
+Units=MHz
+Format=%.0f
+Formula=
+Provider=HAL
+ID=CPU clock
+[Source12]
+Name=RAM usage
+Units=GB
+Format=%.1f
+Formula=x/1024
+Provider=HAL
+ID=RAM usage
+[Source13]
+Name=Total RAM
+Units=GB
+Format=%.0f
+Formula=x/1024
+Provider=HAL
+ID=Total RAM
+[Source14]
+Name=RAM usage percent
+Units=%
+Format=%.0f
+Formula=
+Provider=HAL
+ID=RAM usage percent
+[Source15]
+Name=Water temperature
+Units=°C
+Format=%.1f
+Formula=
+Provider=LHM
+ID=/usbhid/0C70/F012/HFN-SERIAL/temperature/0
+[Source16]
+Name=Water flow
+Units=l/h
+Format=%.0f
+Formula=
+Provider=LHM
+ID=/usbhid/0C70/F012/HFN-SERIAL/flow/0
+[Source17]
+Name=GPU Temperature Available
+Units=
+Format=%.0f
+Formula=validate(x)
+Provider=HAL
+ID=GPU1 temperature
+[Source18]
+Name=GPU Power Available
+Units=
+Format=%.0f
+Formula=validate(x)
+Provider=HAL
+ID=GPU1 power
+[Source19]
+Name=GPU Usage Available
+Units=
+Format=%.0f
+Formula=validate(x)
+Provider=HAL
+ID=GPU1 usage
+[Source20]
+Name=GPU Clock Available
+Units=
+Format=%.0f
+Formula=validate(x)
+Provider=HAL
+ID=GPU1 clock
+[Source21]
+Name=GPU Memory Available
+Units=
+Format=%.0f
+Formula=validate(x)
+Provider=HAL
+ID=GPU1 memory usage
+[Source22]
+Name=GPU Voltage Available
+Units=
+Format=%.0f
+Formula=validate(x)
+Provider=HAL
+ID=GPU1 voltage
+[Source23]
+Name=CPU Temperature Available
+Units=
+Format=%.0f
+Formula=validate(x)
+Provider=HAL
+ID=CPU temperature
+[Source24]
+Name=CPU Power Available
+Units=
+Format=%.0f
+Formula=validate(x)
+Provider=HAL
+ID=CPU power
+[Source25]
+Name=CPU Usage Available
+Units=
+Format=%.0f
+Formula=validate(x)
+Provider=HAL
+ID=CPU usage
+[Source26]
+Name=CPU Clock Available
+Units=
+Format=%.0f
+Formula=validate(x)
+Provider=HAL
+ID=CPU clock
+[Source27]
+Name=RAM Available
+Units=
+Format=%.0f
+Formula=validate(x)
+Provider=HAL
+ID=RAM usage
+[Source28]
+Name=Water Temperature Available
+Units=
+Format=%.0f
+Formula=validate(x)
+Provider=LHM
+ID=/usbhid/0C70/F012/HFN-SERIAL/temperature/0
+[Source29]
+Name=Water Flow Available
+Units=
+Format=%.0f
+Formula=validate(x)
+Provider=LHM
+ID=/usbhid/0C70/F012/HFN-SERIAL/flow/0
+[Layer0]
+Name=Panel art
+Text=<I=300,456,0,0,300,456>
+PositionX=0
+PositionY=0
+ExtentX=300
+ExtentY=456
+ExtentOrigin=0
+FixedAlignment=1
+Size=100
+TextColor=FFFFFFFF
+[Layer1]
+Name=FPS live
+Text=<FR><S=-80><C=FFFF153D> FPS<C><S>
+PositionX=15
+PositionY=25
+ExtentX=180
+ExtentY=90
+ExtentOrigin=0
+FixedAlignment=1
+Size=320
+TextColor=FFF2F4F8
+[Layer2]
+Name=1% low live
+Text=<FR10L>
+PositionX=194
+PositionY=42
+ExtentX=90
+ExtentY=28
+ExtentOrigin=2
+FixedAlignment=1
+Size=100
+TextColor=FFF2F4F8
+[Layer3]
+Name=Frametime live
+Text=<FT><S=-60><C=FF8A93A5> ms<C><S>
+PositionX=194
+PositionY=70
+ExtentX=90
+ExtentY=28
+ExtentOrigin=2
+FixedAlignment=1
+Size=100
+TextColor=FFF2F4F8
+[Layer4]
+Name=Frametime fill
+Text=<G=Frametime,268,30,1,0,25,1>
+PositionX=16
+PositionY=104
+ExtentX=268
+ExtentY=30
+ExtentOrigin=0
+FixedAlignment=1
+Size=100
+TextColor=30FF153D
+[Layer5]
+Name=Frametime line
+Text=<G=Frametime,268,30,1,0,25,0>
+PositionX=16
+PositionY=104
+ExtentX=268
+ExtentY=30
+ExtentOrigin=0
+FixedAlignment=1
+Size=100
+TextColor=FFFF153D
+[Layer6]
+Name=GPU usage live
+Text=<IF GPU Usage Available>%GPU usage%<S=-60><C=FF8A93A5> %<C><S><ELSE>--<IF>
+PositionX=60
+PositionY=176
+ExtentX=80
+ExtentY=28
+ExtentOrigin=2
+FixedAlignment=1
+Size=100
+TextColor=FFF2F4F8
+[Layer7]
+Name=GPU usage bar
+Text=<G=GPU usage,124,3,0,0,100,8>
+PositionX=16
+PositionY=202
+ExtentX=124
+ExtentY=3
+ExtentOrigin=0
+FixedAlignment=1
+Size=100
+TextColor=FFFF153D
+[Layer8]
+Name=VRAM live
+Text=<IF GPU Memory Available>%GPU memory usage%<S=-60><C=FF8A93A5>/%GPU total memory% GB<C><S><ELSE>--<IF>
+PositionX=184
+PositionY=176
+ExtentX=100
+ExtentY=28
+ExtentOrigin=2
+FixedAlignment=1
+Size=100
+TextColor=FFF2F4F8
+[Layer9]
+Name=GPU memory percent bar
+Text=<G=GPU memory percent,124,3,0,0,100,8>
+PositionX=160
+PositionY=202
+ExtentX=124
+ExtentY=3
+ExtentOrigin=0
+FixedAlignment=1
+Size=100
+TextColor=FFFF153D
+[Layer10]
+Name=GPU temperature live
+Text=<IF GPU Temperature Available>%GPU temperature%<S=-52><C=FF8A93A5>°C<C><S><ELSE>--<IF>
+PositionX=15
+PositionY=225
+ExtentX=65
+ExtentY=27
+ExtentOrigin=0
+FixedAlignment=1
+Size=95
+TextColor=FFF2F4F8,,70,FFFFB224,70,83,FFFF3B4E,83,(GPU temperature,0)
+[Layer11]
+Name=GPU power live
+Text=<IF GPU Power Available>%GPU power%<S=-52><C=FF8A93A5> W<C><S><ELSE>--<IF>
+PositionX=85
+PositionY=225
+ExtentX=69
+ExtentY=27
+ExtentOrigin=0
+FixedAlignment=1
+Size=95
+TextColor=FFF2F4F8
+[Layer12]
+Name=GPU clock live
+Text=<IF GPU Clock Available>%GPU clock%<S=-52><C=FF8A93A5> MHz<C><S><ELSE>--<IF>
+PositionX=159
+PositionY=225
+ExtentX=69
+ExtentY=27
+ExtentOrigin=0
+FixedAlignment=1
+Size=95
+TextColor=FFF2F4F8
+[Layer13]
+Name=GPU voltage live
+Text=<IF GPU Voltage Available>%GPU voltage%<S=-52><C=FF8A93A5> V<C><S><ELSE>--<IF>
+PositionX=233
+PositionY=225
+ExtentX=55
+ExtentY=27
+ExtentOrigin=0
+FixedAlignment=1
+Size=95
+TextColor=FFF2F4F8
+[Layer14]
+Name=CPU usage live
+Text=<IF CPU Usage Available>%CPU usage%<S=-60><C=FF8A93A5> %<C><S><ELSE>--<IF>
+PositionX=60
+PositionY=288
+ExtentX=80
+ExtentY=28
+ExtentOrigin=2
+FixedAlignment=1
+Size=100
+TextColor=FFF2F4F8
+[Layer15]
+Name=CPU usage bar
+Text=<G=CPU usage,124,3,0,0,100,8>
+PositionX=16
+PositionY=314
+ExtentX=124
+ExtentY=3
+ExtentOrigin=0
+FixedAlignment=1
+Size=100
+TextColor=FFFF153D
+[Layer16]
+Name=RAM live
+Text=<IF RAM Available>%RAM usage%<S=-60><C=FF8A93A5>/%Total RAM% GB<C><S><ELSE>--<IF>
+PositionX=184
+PositionY=288
+ExtentX=100
+ExtentY=28
+ExtentOrigin=2
+FixedAlignment=1
+Size=100
+TextColor=FFF2F4F8
+[Layer17]
+Name=RAM usage percent bar
+Text=<G=RAM usage percent,124,3,0,0,100,8>
+PositionX=160
+PositionY=314
+ExtentX=124
+ExtentY=3
+ExtentOrigin=0
+FixedAlignment=1
+Size=100
+TextColor=FFFF153D
+[Layer18]
+Name=CPU temperature live
+Text=<IF CPU Temperature Available>%CPU temperature%<S=-52><C=FF8A93A5>°C<C><S><ELSE>--<IF>
+PositionX=15
+PositionY=337
+ExtentX=65
+ExtentY=27
+ExtentOrigin=0
+FixedAlignment=1
+Size=95
+TextColor=FFF2F4F8,,75,FFFFB224,75,88,FFFF3B4E,88,(CPU temperature,0)
+[Layer19]
+Name=CPU power live
+Text=<IF CPU Power Available>%CPU power%<S=-52><C=FF8A93A5> W<C><S><ELSE>--<IF>
+PositionX=85
+PositionY=337
+ExtentX=69
+ExtentY=27
+ExtentOrigin=0
+FixedAlignment=1
+Size=95
+TextColor=FFF2F4F8
+[Layer20]
+Name=CPU clock live
+Text=<IF CPU Clock Available>%CPU clock%<S=-52><C=FF8A93A5> MHz<C><S><ELSE>--<IF>
+PositionX=159
+PositionY=337
+ExtentX=69
+ExtentY=27
+ExtentOrigin=0
+FixedAlignment=1
+Size=95
+TextColor=FFF2F4F8
+[Layer21]
+Name=Water temperature live
+Text=<IF Water Temperature Available>%Water temperature%<S=-52><C=FF8A93A5>°C<C><S><ELSE>--<IF>
+PositionX=15
+PositionY=421
+ExtentX=125
+ExtentY=27
+ExtentOrigin=0
+FixedAlignment=1
+Size=95
+TextColor=FFF2F4F8,,35,FFFFB224,35,40,FFFF3B4E,40,(Water temperature,0)
+[Layer22]
+Name=Water flow live
+Text=<IF Water Flow Available>%Water flow%<S=-52><C=FF8A93A5> l/h<C><S><ELSE>--<IF>
+PositionX=159
+PositionY=421
+ExtentX=125
+ExtentY=27
+ExtentOrigin=0
+FixedAlignment=1
+Size=95
+TextColor=FFF2F4F8

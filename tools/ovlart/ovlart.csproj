@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- SkiaSharp 3.119: copy SkiaSharp.dll and runtimes\win-x64\native\libSkiaSharp.dll
+         from an aquasuite install (or the SkiaSharp NuGet package) into lib\ -->
+    <Reference Include="SkiaSharp"><HintPath>lib\SkiaSharp.dll</HintPath></Reference>
+    <None Update="lib\libSkiaSharp.dll" Link="libSkiaSharp.dll" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

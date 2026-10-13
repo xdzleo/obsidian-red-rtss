@@ -1,0 +1,2 @@
+# OverlayEditor layouts are ANSI (Windows-1252) with CRLF; keep the bytes untouched
+*.ovl binary

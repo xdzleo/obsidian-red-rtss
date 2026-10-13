@@ -1,0 +1,4 @@
+build/
+tools/ovlart/bin/
+tools/ovlart/obj/
+tools/ovlart/lib/*.dll
